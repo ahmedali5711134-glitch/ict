@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change colour</title>
+</head>
+<body>
+    <h2>this button will change the the colour</h2>
+
+    <button id="btn" >click me!</button>
+    <script>
+        const btn =document.getElementById("btn");
+        const color = ["red","blue","green","purple","ornage","orange"]
+        let index=0;
+            btn.addEventListener("click",function(){
+                document.body.style.backgroundColor=color[index];
+                index++;
+                 if(index>5){
+                index=0;
+            }
+                
+            })
+           
+        
+    </script>
+    
+</body>
+</html>
